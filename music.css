@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap');
+
+body{
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-color: rgb(219, 231, 231);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    padding: 0 12px;
+    color: #F4ABC4;
+}
+
+nav ul{
+    display: flex;
+    opacity: 0.9;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    /* background-color: rgb(32, 127, 138); */
+    background: linear-gradient(to right, #060930, #333456);
+    padding: 0 12px;
+}
+.brand img{
+    width: 23px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+.container{
+    min-height: 72vh;
+    background-color: rgb(226, 213, 213);
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    margin: 50px auto;
+    width: 85%;
+    border-radius: 12px;
+    padding: 34px;  
+    background-image: url('head.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-size: 800px; */
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    background-color: black;
+    color: #F4ABC4;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myprogressbar{
+    /* margin-top: 100px; */
+    padding-top: 20px;
+    width: 200vh;
+    cursor: pointer;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    margin: 12px 0;
+    background-color: black;
+    border-radius: 34px;
+    opacity: 0.7;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 74px;
+    align-items: center;
+    
+}
+.songInfo{
+    position: absolute;
+    display: flex;
+    left: 15vw;
+    font-family: 'Varela Round',sans-serif;
+    margin-top: 30px;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity is ease-in;
+}
+#masterSongName{
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 1100px) {
+    body {
+        background-image: url(back.jpg);
+    }
+  }
